@@ -1,0 +1,15 @@
+<div class="modal-header">
+    <h4 class="modal-title">Employee Details</h4>
+
+</div>
+<div class="modal-body">
+    <div class="employee-details">
+        <span>Name: &nbsp;&nbsp; <strong>{{emp.name}}</strong></span>
+        <span>Emp Id: &nbsp;&nbsp; <strong>{{emp.empId}}</strong> </span>
+        <span>Salary: &nbsp;&nbsp; <strong>{{emp.salary | currency:'EUR':'symbol-narrow':'3.0'}}</strong></span>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+</div>

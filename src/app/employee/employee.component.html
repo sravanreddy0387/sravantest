@@ -1,0 +1,27 @@
+<div class="table-responsive">
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Emp Id</th>
+        <th>Name</th>
+        <th>Tier</th>
+        <th>Leaves Taken</th>
+        <th>Tot exp</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees | filter:searchText" (click)="open(employee)" class="employee-row">
+        <td>{{employee.empId}}</td>
+        <td>{{employee.name}}</td>
+        <td>{{employee.tier}}</td>
+        <td>{{employee.leavesTaken}}</td>
+        <td>{{employee.totalExperience}}</td>
+        <td>{{employee.salary| currency:'EUR':'symbol-narrow':'3.0'}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.search-box {
+    padding: 10px 0px;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.employee-details {
+    display: flex;
+    flex-direction: column
+}
+
+.employee-row {
+    cursor: pointer;
+}
